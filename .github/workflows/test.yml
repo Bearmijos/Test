@@ -9,4 +9,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   user-payload-validation:
-    run: echo 'hello'
+    name: User Payload Validation
+    runs-on: ubuntu-latest
+    steps:
+      run: echo 'hello'
