@@ -1,0 +1,12 @@
+name: GitHub Marketplace Actions Workflow
+on:
+  issues:
+    types:
+      - opened # Runs a workflow when an issue has been opened
+      - reopened # Runs a workflow when an issue has been reopened
+      - edited # Runs a workflow when an issue has been edited
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  user-payload-validation:
+    run: echo 'hello'
