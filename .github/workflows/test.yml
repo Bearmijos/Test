@@ -5,6 +5,7 @@ on:
       - opened # Runs a workflow when an issue has been opened
       - reopened # Runs a workflow when an issue has been reopened
       - edited # Runs a workflow when an issue has been edited
+      - labeled
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
