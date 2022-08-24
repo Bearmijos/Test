@@ -8,7 +8,6 @@ on:
       - labeled
 jobs:
   Explore-GitHub-Actions:
-    if: ${{ github.event.label.name == 'bug' }}
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
