@@ -8,7 +8,7 @@ on:
       - labeled
 jobs:
   Explore-GitHub-Actions:
-    if: ${{ github.event.label.name == 'bug' }} && ${{ fromJSON(github.event.issue.body)}}
+    if: ${{ github.event.label.name == 'github-market-place-actions' }}
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
